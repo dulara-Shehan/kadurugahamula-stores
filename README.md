@@ -1,0 +1,1 @@
+# kadurugahamula-stores

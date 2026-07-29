@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="si" data-theme="light" data-lang="mixed">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kadurugahamula Stores - Fresh Vegetables, Groceries & School Supplies Delivered to Your Doorstep. Order via WhatsApp 076 158 6202.">
+    <title>Kadurugahamula Stores | Fresh Groceries & Delivery | ඔබේ දොරටම නැවුම් එළවළු</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Express Announcement Ticker Bar -->
+    <div class="top-announcement-bar">
+        <div class="container ticker-wrapper">
+            <div class="ticker-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>⚡ <strong>Free Home Delivery</strong> for orders above <strong>Rs. 3,000</strong> in Local Area! | රු. 3,000ට වැඩි ඇණවුම් සඳහා නොමිලේ Delivery!</span>
+            </div>
+            <div class="ticker-contact">
+                <i class="fa-brands fa-whatsapp"></i> Hotline: <a href="https://wa.me/94761586202" target="_blank">076 158 6202</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar -->
+    <header class="site-header" id="header">
+        <div class="container navbar">
+            <a href="#home" class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">Kadurugahamula</span>
+                    <span class="brand-tagline">STORES & HOME DELIVERY</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home | මුල් පිටුව</a>
+                <a href="#products" class="nav-link"><i class="fa-solid fa-store"></i> Shop | භාණ්ඩ</a>
+                <a href="#gallery" class="nav-link"><i class="fa-solid fa-camera"></i> Pictures | ඡායාරූප</a>
+                <a href="#offers" class="nav-link"><i class="fa-solid fa-tag"></i> Offers | පැකේජ</a>
+                <a href="#custom-order" class="nav-link"><i class="fa-solid fa-pen-to-square"></i> Custom Order | වෙනත්</a>
+                <a href="#delivery" class="nav-link"><i class="fa-solid fa-truck-fast"></i> Delivery | බෙදාහැරීම්</a>
+                <a href="#faq" class="nav-link"><i class="fa-solid fa-circle-question"></i> FAQ | ප්‍රශ්න</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-phone"></i> Contact | අමතන්න</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button class="icon-btn theme-toggle" id="themeToggleBtn" title="Theme Switcher | තේමාව වෙනස් කරන්න" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Language Mode Switcher Pill -->
+                <div class="lang-switcher" id="langSwitcherBtn" title="Language Mode | භාෂාව සකසන්න">
+                    <span class="lang-chip active" data-lang="mixed">Mixed</span>
+                    <span class="lang-chip" data-lang="si">සිංහල</span>
+                    <span class="lang-chip" data-lang="en">EN</span>
+                </div>
+
+                <!-- Shopping Cart Button -->
+                <button class="cart-trigger-btn" id="openCartBtn" aria-label="View Shopping Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-btn-text">Cart | කාඩ් එක</span>
+                    <span class="cart-badge" id="cartBadgeCount">0</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-shield-heart"></i> 100% Farm Fresh Quality | ගුණාත්මකභාවය සහ නැවුම් බව
+                </div>
+                <h1 class="hero-title">
+                    Everything You Need... <br>
+                    <span class="highlight-text">Delivered to Your Doorstep! | ඔබේ දොරටම!</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Fresh Vegetables, Daily Groceries, School Supplies & Custom Packages. Working late? We deliver after work (5 PM - 8 PM) right when you return home!
+                </p>
+
+                <div class="hero-features-pills">
+                    <span class="pill"><i class="fa-solid fa-carrot"></i> Fresh Veggies | නැවුම් එළවළු</span>
+                    <span class="pill"><i class="fa-solid fa-bag-shopping"></i> Daily Groceries | සිල්ලර භාණ්ඩ</span>
+                    <span class="pill"><i class="fa-solid fa-book-open"></i> School Items | පාසල් උපකරණ</span>
+                    <span class="pill"><i class="fa-solid fa-clock"></i> Express Delivery | වෙලාවටම</span>
+                </div>
+
+                <div class="hero-cta-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <i class="fa-solid fa-basket-shopping"></i> Shop Now | භාණ්ඩ තෝරන්න
+                    </a>
+                    <a href="https://wa.me/94761586202?text=Hello%20Kadurugahamula%20Stores,%20I%20want%20to%20place%20an%20order." class="btn btn-whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp | WhatsApp ඇණවුම්
+                    </a>
+                </div>
+
+                <!-- Live Ticking Discount Banner -->
+                <div class="hero-timer-banner glass-card">
+                    <div class="timer-title"><i class="fa-solid fa-bolt" style="color: #f59e0b;"></i> Today's Express Discount Ends In:</div>
+                    <div class="timer-countdown" id="heroCountdownTimer">
+                        <div class="time-box"><span id="hours">04</span><small>Hours</small></div>:
+                        <div class="time-box"><span id="minutes">45</span><small>Mins</small></div>:
+                        <div class="time-box"><span id="seconds">30</span><small>Secs</small></div>
+                    </div>
+                </div>
+
+                <div class="hero-trust-bar">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call Hotline: <strong>076 158 6202</strong></span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Pay on Delivery (COD)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick WhatsApp Order Widget -->
+            <div class="hero-visual">
+                <div class="glass-card hero-preview-card">
+                    <div class="preview-header">
+                        <span class="live-dot"></span> <strong>Quick WhatsApp List Builder | ඉක්මන් ඇණවුම</strong>
+                    </div>
+                    <p class="preview-text">Type your items & send instantly to WhatsApp:</p>
+                    <div class="quick-order-input-group">
+                        <input type="text" id="quickOrderInput" placeholder="e.g. Carrots 1kg, Samba Rice 5kg, Dhal 500g...">
+                        <button class="btn btn-whatsapp btn-sm" id="sendQuickOrderBtn">
+                            <i class="fa-brands fa-whatsapp"></i> Send | යවන්න
+                        </button>
+                    </div>
+                    <div class="quick-tags">
+                        <span onclick="addQuickTag('Carrots 1kg | කැරට් 1kg')">+ Carrots 1kg</span>
+                        <span onclick="addQuickTag('Leeks 500g | ලීක්ස් 500g')">+ Leeks 500g</span>
+                        <span onclick="addQuickTag('Samba Rice 5kg | සහල් 5kg')">+ Rice 5kg</span>
+                        <span onclick="addQuickTag('Red Lentils 1kg | පරිප්පු 1kg')">+ Dhal 1kg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products Catalog with Pictures -->
+    <section id="products" class="section-padding products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Product Catalog | අපගේ නිෂ්පාදන</span>
+                <h2 class="section-title">Select Products & Pictures | භාණ්ඩ තෝරා Cart එකට එකතු කරන්න</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="catalog-controls">
+                <div class="search-sort-wrapper">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="productSearchInput" placeholder="Search products in Sinhala or English (e.g. Carrot, කැරට්, Rice, සහල්)...">
+                        <button id="clearSearchBtn" class="clear-search-btn" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="sort-box">
+                        <label for="sortSelect"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort By:</label>
+                        <select id="sortSelect">
+                            <option value="default">Default | සාමාන්‍ය</option>
+                            <option value="price-low">Price: Low to High | මිල: අඩු සිට වැඩි</option>
+                            <option value="price-high">Price: High to Low | මිල: වැඩි සිට අඩු</option>
+                            <option value="name">Name | නම අනුව</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="category-tab active" data-category="all">
+                        <i class="fa-solid fa-border-all"></i> All Items | සියල්ල
+                    </button>
+                    <button class="category-tab" data-category="vegetables">
+                        <i class="fa-solid fa-carrot"></i> Fresh Veggies | එළවළු
+                    </button>
+                    <button class="category-tab" data-category="groceries">
+                        <i class="fa-solid fa-wheat-awn"></i> Groceries | සිල්ලර භාණ්ඩ
+                    </button>
+                    <button class="category-tab" data-category="school">
+                        <i class="fa-solid fa-pen-ruler"></i> School Supplies | පාසල් උපකරණ
+                    </button>
+                    <button class="category-tab" data-category="packages">
+                        <i class="fa-solid fa-gift"></i> Special Offers | පැකේජ
+                    </button>
+                </div>
+            </div>
+
+            <!-- Products Grid Container -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Dynamic Javascript product cards with photos rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPANDED Photo Gallery Section ("📸 Pictures & Fresh Harvest Gallery") -->
+    <section id="gallery" class="section-padding gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Store & Farm Pictures | ඡායාරූප ගැලරිය</span>
+                <h2 class="section-title">100% Fresh Farm Harvest, Groceries & Store Pictures</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card" onclick="openLightbox('farm_package.jpg', 'Fresh Farm Vegetables Basket Package | නැවුම් එළවළු පැකේජය')">
+                    <img src="farm_package.jpg" alt="Fresh Vegetable Basket" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Fresh Veggie Basket</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('grocery_basket.jpg', 'Daily Grocery Items & Rice Basket | සිල්ලර භාණ්ඩ පැකේජය')">
+                    <img src="grocery_basket.jpg" alt="Daily Groceries Basket" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Daily Groceries Basket</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('school_supplies.jpg', 'School Exercise Books & Stationery Set | පාසල් උපකරණ කට්ටලය')">
+                    <img src="school_supplies.jpg" alt="School Stationery" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>School Supplies Set</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('hero_banner.jpg', 'Organic Farm Harvest & Groceries Banner | නැවුම් අස්වැන්න')">
+                    <img src="hero_banner.jpg" alt="Farm Harvest & Groceries" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Farm Harvest Banner</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1598170845058-12ef4a457939?auto=format&fit=crop&w=800&q=80', 'Fresh Farm Carrots | නැවුම් කැරට්')">
+                    <img src="https://images.unsplash.com/photo-1598170845058-12ef4a457939?auto=format&fit=crop&w=800&q=80" alt="Fresh Carrots" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Fresh Organic Carrots</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80', 'Ripe Red Tomatoes | නැවුම් තක්කාලි')">
+                    <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Red Tomatoes" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Ripe Red Tomatoes</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80', 'Premium White Samba Rice | උසස්ම සම්බා සහල්')">
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80" alt="Samba Rice" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Premium Rice Supply</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80', 'School Art Supplies & Pencils | පාට පැන්සල්')">
+                    <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80" alt="Colour Pencils" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>School Art Pencils</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="section-padding offers-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Special Bundles | විශේෂ දීමනා</span>
+                <h2 class="section-title">Family Grocery Packages | විශේෂ පවුලේ පැකේජ</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <div class="offers-grid">
+                <!-- Package 1 -->
+                <div class="offer-card">
+                    <div class="offer-badge">15% OFF</div>
+                    <div class="offer-img-box">
+                        <img src="farm_package.jpg" alt="Family Package 1" class="offer-photo">
+                    </div>
+                    <h3 class="offer-title">Family Saver Package 1</h3>
+                    <p class="offer-desc">Essential vegetables & daily groceries for small families | කුඩා පවුල් සඳහා සුදුසු පැකේජය</p>
+                    <ul class="offer-list">
+                        <li><i class="fa-solid fa-check"></i> 5 Fresh Vegetables (500g each) | නැවුම් එළවළු වර්ග 5ක්</li>
+                        <li><i class="fa-solid fa-check"></i> Samba Rice 5kg | සම්බා සහල් 5kg</li>
+                        <li><i class="fa-solid fa-check"></i> Red Lentils (Dhal) 1kg | පරිප්පු 1kg</li>
+                        <li><i class="fa-solid fa-check"></i> White Sugar 1kg | සුදු සීනි 1kg</li>
+                    </ul>
+                    <div class="price-container">
+                        <span class="current-price">Rs. 4,000</span>
+                        <span class="original-price">Rs. 5,000</span>
+                    </div>
+                    <button class="btn btn-accent btn-full" onclick="addPackageToCart('Family Saver Package 1', 4000)">
+                        <i class="fa-solid fa-cart-plus"></i> Add Package to Cart | Cart එකට එක් කරන්න
+                    </button>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="offer-card featured">
+                    <div class="featured-tag"><i class="fa-solid fa-crown"></i> Most Popular | වඩාත් ජනප්‍රියයි</div>
+                    <div class="offer-badge">25% OFF</div>
+                    <div class="offer-img-box">
+                        <img src="grocery_basket.jpg" alt="Mega Family Package 2" class="offer-photo">
+                    </div>
+                    <h3 class="offer-title">Mega Family Package 2</h3>
+                    <p class="offer-desc">Complete weekly supply with a FREE surprise gift included! | නොමිලේ ත්‍යාගයක් සහිත සුපිරි පැකේජය</p>
+                    <ul class="offer-list">
+                        <li><i class="fa-solid fa-check"></i> 8 Fresh Vegetables (1kg each) | නැවුම් එළවළු වර්ග 8ක්</li>
+                        <li><i class="fa-solid fa-check"></i> Samba Rice 10kg + Pure Coconut Oil 1L | සහල් 10kg + පොල් තෙල් 1L</li>
+                        <li><i class="fa-solid fa-check"></i> Dhal 2kg, Sugar 2kg, Tea Leaves 250g | පරිප්පු, සීනි, තේ කොළ</li>
+                        <li><i class="fa-solid fa-gift" style="color: #f59e0b;"></i> <strong>FREE Mystery Gift Included! | නොමිලේ විශේෂ ත්‍යාගයක්</strong></li>
+                    </ul>
+                    <div class="price-container">
+                        <span class="current-price">Rs. 7,500</span>
+                        <span class="original-price">Rs. 10,000</span>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="addPackageToCart('Mega Family Package 2', 7500)">
+                        <i class="fa-solid fa-cart-plus"></i> Add Package to Cart | Cart එකට එක් කරන්න
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Item Order Section -->
+    <section id="custom-order" class="section-padding custom-order-section">
+        <div class="container">
+            <div class="custom-order-box glass-card">
+                <div class="custom-order-grid">
+                    <div class="custom-order-info">
+                        <span class="section-subtitle">Item Not in Catalog? | වෙනත් භාණ්ඩ</span>
+                        <h2>Send Us Your Custom Grocery List | ඔබගේ භාණ්ඩ ලැයිස්තුව එවන්න</h2>
+                        <p>
+                            If there are items not listed in our shop, simply write them down below. We will source them for you and deliver straight to your home!
+                        </p>
+                        <ul class="custom-features-list">
+                            <li><i class="fa-solid fa-check-double"></i> Any Specific Brands | ඕනෑම වෙළඳනාමයක්</li>
+                            <li><i class="fa-solid fa-check-double"></i> Custom Quantities & Weights | අවශ්‍ය ඕනෑම ප්‍රමාණයක්</li>
+                            <li><i class="fa-solid fa-check-double"></i> Cash on Delivery or Bank Transfer | පහසු ගෙවීම්</li>
+                        </ul>
+                    </div>
+                    <div class="custom-order-form">
+                        <div class="form-group">
+                            <label for="customItemsText"><i class="fa-solid fa-list-check"></i> Your Custom Item List | ඔබගේ භාණ්ඩ ලැයිස්තුව:</label>
+                            <textarea id="customItemsText" rows="4" placeholder="e.g.&#10;1. White Rice 5kg / සුදු සහල් 5kg&#10;2. Signal Toothpaste 1 / දත් බෙහෙත් 1&#10;3. Exercise Books 80p x 5..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="customCustomerName"><i class="fa-solid fa-user"></i> Your Name | ඔබගේ නම:</label>
+                            <input type="text" id="customCustomerName" placeholder="e.g. Sunil Perera / සුනිල්">
+                        </div>
+                        <div class="form-group">
+                            <label for="customCustomerAddress"><i class="fa-solid fa-location-dot"></i> Delivery Address | ලිපිනය:</label>
+                            <input type="text" id="customCustomerAddress" placeholder="Your Delivery Address">
+                        </div>
+                        <button class="btn btn-whatsapp btn-full" id="sendCustomOrderBtn">
+                            <i class="fa-brands fa-whatsapp"></i> Send List to WhatsApp | WhatsApp වෙත යවන්න
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Working Hours & Area Calculator Info -->
+    <section id="delivery" class="section-padding delivery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Convenient Delivery | පහසු බෙදාහැරීම</span>
+                <h2 class="section-title">After-Work Evening Delivery | රැකියාවෙන් පසු දොරකඩටම!</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <div class="delivery-cards-grid">
+                <div class="delivery-card">
+                    <div class="delivery-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Working from 8 AM to 5 PM?</h3>
+                    <p>No problem! Send us your order on WhatsApp during work, and we will prepare it fresh.</p>
+                </div>
+
+                <div class="delivery-card active-card">
+                    <div class="delivery-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Choose Preferred Time Slot</h3>
+                    <p>We deliver right when you arrive home in the evening (5:00 PM - 8:00 PM).</p>
+                </div>
+
+                <div class="delivery-card">
+                    <div class="delivery-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Pay After Inspecting Items</h3>
+                    <p>Cash on Delivery (COD) or instant Bank Transfer option available upon doorstep delivery.</p>
+                </div>
+            </div>
+
+            <!-- Delivery Zone Checker -->
+            <div class="delivery-zone-box glass-card">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Check Delivery Distance & Fees | බෙදාහැරීම් ගාස්තු සෙවුම</h3>
+                <div class="zone-flex">
+                    <select id="deliveryZoneSelect">
+                        <option value="0">Kadurugahamula Local Area (FREE Delivery | නොමිලේ)</option>
+                        <option value="150">Within 3 km Radius (Rs. 150)</option>
+                        <option value="250">Within 5 km Radius (Rs. 250)</option>
+                        <option value="350">Within 10 km Radius (Rs. 350)</option>
+                    </select>
+                    <div class="zone-fee-display">
+                        Delivery Fee: <strong id="calculatedZoneFee">Rs. 0 (FREE)</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Frequently Asked Questions | නිතර අසන ප්‍රශ්න</span>
+                <h2 class="section-title">Got Questions? We Have Answers!</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><i class="fa-solid fa-circle-question"></i> How do I place an order via WhatsApp? | WhatsApp එකෙන් Order කරන්නේ කෙසේද?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can add items to your cart on this website and click "Checkout via WhatsApp". The website will automatically format your full itemized list and send it to our official WhatsApp number 076 158 6202!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><i class="fa-solid fa-circle-question"></i> Can I request delivery after 5:00 PM? | සවස 5න් පසු delivery ලබාගත හැකිද?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We specialize in evening doorstep deliveries (5 PM - 8 PM) so you can receive fresh vegetables and groceries right when you get back home from work.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><i class="fa-solid fa-circle-question"></i> What payment methods do you accept? | ගෙවීම් ක්‍රම මොනවාද?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept Cash on Delivery (COD) as well as direct Online Bank Transfers upon item delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch | සම්බන්ධ කරගන්න</span>
+                <h2 class="section-title">Contact Kadurugahamula Stores</h2>
+                <div class="title-divider"><span></span></div>
+            </div>
+
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <div class="contact-icon whatsapp-bg"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp Order Hotline</h3>
+                    <p>Fast responses within minutes</p>
+                    <a href="https://wa.me/94761586202" class="contact-link" target="_blank">076 158 6202</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon phone-bg"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Direct Phone Call</h3>
+                    <p>Call us anytime during shop hours</p>
+                    <a href="tel:0761586202" class="contact-link">076 158 6202</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon email-bg"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Official Email</h3>
+                    <p>For inquiries and feedback</p>
+                    <a href="mailto:dularashehan1111@gmail.com" class="contact-link">dularashehan1111@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-leaf"></i> Kadurugahamula Stores
+                </div>
+                <p>Your trusted local partner for farm fresh vegetables, quality groceries, and school supplies delivered directly to your doorstep.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home | මුල් පිටුව</a></li>
+                    <li><a href="#products">Shop | භාණ්ඩ</a></li>
+                    <li><a href="#gallery">Pictures | ඡායාරූප</a></li>
+                    <li><a href="#offers">Offers | පැකේජ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h4>Opening Hours & Support</h4>
+                <p><i class="fa-regular fa-clock"></i> Daily Open: 7:00 AM - 9:00 PM</p>
+                <p><i class="fa-solid fa-truck"></i> Evening Delivery: 5:00 PM - 8:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Kadurugahamula Stores. All Rights Reserved. Mobile Fixed WhatsApp Edition.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Photo Gallery -->
+    <div class="modal-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="modal-close-btn" id="closeLightboxBtn"><i class="fa-solid fa-xmark"></i></button>
+        <img id="lightboxImg" src="" alt="Full Picture" class="lightbox-full-img">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal-overlay" id="quickViewOverlay"></div>
+    <div class="quick-view-modal" id="quickViewModal">
+        <button class="modal-close-btn" id="closeQuickViewBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-body" id="quickViewModalBody">
+            <!-- Loaded dynamically in JavaScript -->
+        </div>
+    </div>
+
+    <!-- Interactive Shopping Cart Drawer Modal -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <div class="cart-title">
+                <i class="fa-solid fa-basket-shopping"></i> Your Cart | කාඩ් එක (<span id="cartDrawerCount">0</span>)
+            </div>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="cart-body" id="cartBody">
+            <div class="empty-cart-view" id="emptyCartView">
+                <i class="fa-solid fa-basket-shopping empty-icon"></i>
+                <p>Your cart is empty | ඔබගේ Cart එක හිස්ව පවතී.</p>
+                <a href="#products" class="btn btn-primary btn-sm" onclick="closeCart()">Browse Shop | භාණ්ඩ තෝරන්න</a>
+            </div>
+            
+            <div class="cart-items-list" id="cartItemsList"></div>
+        </div>
+
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <!-- Coupon Code Input -->
+            <div class="promo-box">
+                <input type="text" id="promoCodeInput" placeholder="Promo Code (e.g. FREEDEL, KADURU10)">
+                <button class="btn btn-primary btn-sm" id="applyPromoBtn">Apply</button>
+            </div>
+            <div id="promoMessage" class="promo-msg"></div>
+
+            <div class="cart-summary-line">
+                <span>Subtotal | එකතුව:</span>
+                <span class="cart-subtotal" id="cartSubtotal">Rs. 0</span>
+            </div>
+
+            <div class="cart-summary-line delivery-line">
+                <span>Delivery Fee | ගාස්තුව:</span>
+                <span id="cartDeliveryFee">Rs. 0</span>
+            </div>
+
+            <div class="cart-summary-line net-total-line">
+                <span>Grand Total | මුළු එකතුව:</span>
+                <span class="cart-grand-total" id="cartGrandTotal">Rs. 0</span>
+            </div>
+
+            <!-- Customer Details Form inside Cart -->
+            <div class="cart-checkout-form">
+                <h4><i class="fa-solid fa-truck-ramp-box"></i> Order Details | ඇණවුම් තොරතුරු</h4>
+                <div class="form-group">
+                    <input type="text" id="cartCustomerName" placeholder="Your Name | ඔබගේ නම *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="cartCustomerPhone" placeholder="Phone Number | දුරකථන අංකය *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="cartCustomerAddress" placeholder="Delivery Address | ලිපිනය *" required>
+                </div>
+                <div class="form-group">
+                    <select id="cartDeliveryTime">
+                        <option value="Anytime | පහසුම වේලාව">Select Preferred Delivery Time Slot</option>
+                        <option value="5:00 PM - 8:00 PM (After Work Evening | Job එකෙන් පසු)">5:00 PM - 8:00 PM (After Work Evening)</option>
+                        <option value="8:00 AM - 11:00 AM (Morning)">8:00 AM - 11:00 AM (Morning)</option>
+                        <option value="12:00 PM - 3:00 PM (Afternoon)">12:00 PM - 3:00 PM (Afternoon)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Sticky Pinned WhatsApp Checkout Button -->
+            <button class="btn btn-whatsapp btn-full btn-lg sticky-checkout-btn" id="checkoutWhatsappBtn">
+                <i class="fa-brands fa-whatsapp"></i> Confirm & Send Order to WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Clean Stacked Floating Action Buttons (Right-aligned, non-overlapping) -->
+    <div class="floating-buttons-stack">
+        <button class="floating-cart-btn" id="floatingCartBtn" title="View Cart | Cart එක බලන්න" aria-label="Floating Cart Button">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="floating-badge" id="floatingCartCount">0</span>
+        </button>
+
+        <a href="https://wa.me/94761586202?text=Hello%20Kadurugahamula%20Stores,%20I%20want%20to%20place%20an%20order." class="whatsapp-float-btn" target="_blank" title="Chat on WhatsApp" aria-label="WhatsApp Floating Button">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-tooltip">Order on WhatsApp | WhatsApp ඇණවුම්</span>
+        </a>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
